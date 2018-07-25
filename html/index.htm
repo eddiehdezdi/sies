@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head><title>SIES - v0.4</title>
+<script type="text/javascript" src="../js/js_general.js"></script>
+<script type="text/javascript" src="../js/js_index.js"></script>
+<script type="text/javascript" src="../js/js_calendario.js"></script>
+<script type="text/javascript" src="../js/js_libVentas.js"></script>
+<script type="text/javascript" src="../js/js_libES.js"></script>
+<script type="text/javascript" src="../js/js_libCortes.js"></script>
+<script type="text/javascript" src="../js/js_invMapeo.js"></script>
+<script type="text/javascript" src="../js/js_invChequeo.js"></script>
+<script type="text/javascript" src="../js/js_artList.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/css_general.css"/>
+</head>
+
+<body onload="index_init()">
+<table width="1000" align="center" border="0"><!-- tabla general -->
+<tr><td><!-- encabezado -->
+<form>
+Sistema de Inventarios de Eclipse Shop v0.4
+<br/><br/>
+	<table width="100%" border="0"><!-- tabla de las 4 secciones -->
+	<tr>
+	<td width="50%"><!--  sección de sucursal -->
+	Tienda: <span id="span_sucList"></span> 
+	<input type="button" id="button_delSuc" value="Eliminar" onclick="index_delSuc()" disabled /> 
+	<input type="button" value="Ordenar Lista" onclick="index_ordenaTiendas()"/>
+	</td>
+	<td><!--  sección de fecha -->
+		<table width="100%" border="0"><tr><td>
+		Fecha: 
+		</td><td>
+		<input type="text" size="35" id="text_date" onfocus="document.getElementById('text_date').blur()"/> 
+		<a href="javascript:index_setDate('previous')">
+		<img src="../jpg/lt.jpg" style="vertical-align:-2px;"/></a> 
+		<a href="javascript:index_setDate('user')"><img src="../jpg/cl.jpg" style="vertical-align:-4px;"/></a> 
+		<a href="javascript:index_setDate('next')">
+		<img src="../jpg/rt.jpg" style="vertical-align:-2px;"/></a>
+		</td></tr></table>
+	</td>
+	</tr>
+	<tr>
+	<td><!--  sección de libreta / inventarios -->
+		<br/>
+		<table width="100%" style="text-align:center;"><tr>
+		<td><a href="javascript:index_setShow('lib')">Libreta</a></td>
+		<td><a href="javascript:index_setShow('inv')">Inventarios</a></td>
+		</tr></table>
+	</td>
+	<td><!--  sección virtual de calendario -->
+	<div id="div_calendario" class="css_noCalendario"></div>
+		<!--  elementos ocultos colocados en la sección virtual del calendario -->
+		<input type="hidden" id="hidden_suc" value=""/>
+		<input type="hidden" id="hidden_date" value=""/>
+		<input type="hidden" id="hidden_show" value=""/>
+		<input type="hidden" id="hidden_display" value=""/>
+	</td>
+	</tr>
+	</table>
+</form>
+</td></tr><!-- fin del encabezado -->
+<tr><td>
+<div id="div_subMenu"></div>
+</td></tr>
+<tr><td>
+<div id="div_subCont"></div>
+</td></tr>
+</table>
+<div id="div_indexArtList"></div>
+</body>
+
+</html>

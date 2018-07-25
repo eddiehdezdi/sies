@@ -1,0 +1,31 @@
+img {border-width:0px;}
+.css_noCalendario {
+	display:none;
+	position:absolute;
+	}
+.css_calendario {
+	display:block;
+	height:250px;
+	width:300px;
+	position:absolute;
+	left:350px;
+	border:2px solid #4682b4;
+	background-color:white;
+	}
+.whitebg {background-color:rgba(255,255,255,1.0);}
+.bluebg {background-color:rgba(200,215,230,1.0);}
+.blurbluebg {background-color:rgba(225,235,255,1.0);}
+.css_noList {
+	display:none;
+	position:absolute;
+	}
+.css_list {
+	display:block;
+	height:100px;
+	width:450px;
+	position:absolute;
+	left:280px;
+	top:200px;
+	border:2px solid #4682b4;
+	background-color:white;
+	}

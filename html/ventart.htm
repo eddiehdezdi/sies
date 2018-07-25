@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src="../js/js_general.js"></script>
+<script>
+function ventart_contar(){
+	var sucStr = document.getElementById("text_tienda").value;
+	var iniStr = document.getElementById("text_inicia").value;
+	var termStr = document.getElementById("text_termina").value;
+	var id = document.getElementById("text_id").value;
+	var sucDate_getStr = "suc="+sucStr+"&ini="+iniStr+"&term="+termStr+"&art="+id;
+	document.getElementById("text_conteo").value = make_XMLHttpRequest("../php/php_ventart.php", sucDate_getStr);
+	}
+</script>
+</head>
+<body>
+Sistema de Inventarios de Eclipse Shop v0.4
+<br><br>
+<form onsubmit="ventart_contar(); return false;">
+Tienda: <input id="text_tienda" type="text">
+<br><br>
+Fechas: Del <input id="text_inicia" type="text"> al <input id="text_termina" type="text">
+<br><br>
+Art Id: <input id="text_id" type="text">
+<br><br>
+<input type="submit" value="Contar">
+<br><br>
+Conteo: <input id="text_conteo" type="text" size="2" onfocus="blur();">
+</form>
+</body>
+</html>

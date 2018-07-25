@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>SIES v0.4 - Importar v0.1 </title>
+<script type="text/javascript" src="../js/js_general.js"></script>
+<script type="text/javascript" src="js_importar.js"></script>
+</head>
+<body>
+<form>
+Sistema de Inventarios de Eclipse Shop v0.4
+<br/><br/>
+Importar Lista
+<br/><br/>
+Sucursal: <input type="text" id="text_listSuc"/>
+<br/>
+Fecha (opcional): <input type="text" id="text_listDate"/>
+<br/>
+<input type="button" value="Importar" onclick="imp_importarList()"/>
+
+<br/><br/><br/>
+
+Importar Inventario
+<br/><br/>
+Sucursal: <input type="text" id="text_invSuc"/>
+<br/>
+Fecha: <input type="text" id="text_invDate"/>
+<br/>
+<input type="button" value="Importar" onclick="imp_importarInv()"/>
+
+<br/><br/><br/>
+
+Importar Libreta
+<br/><br/>
+Sucursal: <input type="text" id="text_libSuc"/>
+<br/>
+Fechas: de <input type="text" id="text_libInicia"/> a <input type="text" id="text_libTermina"/>
+<br/>
+<input type="button" value="Importar" onclick="imp_importarLib()"/>
+
+</form>
+</body>
+</html>

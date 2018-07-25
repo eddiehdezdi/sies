@@ -1,0 +1,35 @@
+div.d-body {
+	width:960px;
+	margin:0px auto 0px auto;
+	}
+
+div.d-suc-date {
+	width:400px;
+	display:inline-block;
+	margin:0px 39px 0px 39px;
+	text-align:center;
+	}
+
+div.d-area {
+	width:inherit;
+	}
+
+div.d-mes {
+	border:1px solid rgb(148,168,208);
+	width:800px;
+	margin:0px auto 0px auto;
+	text-align:center;
+	}
+
+table.t-mes {
+	width:inherit;
+	text-align:center;
+	}
+
+span.sp-gris {
+	color:rgb(219,213,185);
+	}
+
+td.td-b1 {
+	border:1px solid rgb(148,168,208);
+	}
